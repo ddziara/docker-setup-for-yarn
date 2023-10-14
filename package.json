@@ -1,0 +1,14 @@
+{
+  "name": "docker-setup-for-yarn",
+  "packageManager": "yarn@3.5.1",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "admin": "yarn workspace admin start",
+    "product": "yarn workspace product start",
+    "build:admin": "yarn workspace admin build",
+    "build:product": "yarn workspace product build"
+  }
+}
